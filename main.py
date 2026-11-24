@@ -1,28 +1,33 @@
 """Satu kata untuk kompetisi make.fun "One Word for the Boss" (v2, ATM).
 
-Bedah lapangan (24 Nov ~19:55 WIB, 674 submission live, 389 judul yang
-menyingkap kata; 169 judul default + ~116 nama generik menyembunyikan
-katanya -- jadi 0-hit terverifikasi hanya atas judul yang terlihat):
+Bedah lapangan (24 Nov ~19:55 WIB, 674 submission live; hitungan regex
+tanpa memperhatikan huruf besar/kecil atas SEMUA judul, termasuk pola
+"One Word for the Boss: X". 147 judul persis "One Word for the Boss" +
+~138 judul nama generik dua kata menyembunyikan katanya -- total ~285 kata
+tersembunyi, jadi 0-hit terverifikasi hanya atas judul yang terlihat):
 - JENUH: hovering (hovercraft 21, hoverer 8, helicopter 3, omnipresent 4,
   swooper, loomer, unblinking, snoopervisor, neckbreather), meeting
   (meetingizer 9, meetingholic 6, meetingmaker 5, +belasan varian -saurus/
-  -aholic/-monger/-ivore, circlebacker 8), ghost/absen (ghost 7, ghoster 3,
+  -aholic/-monger/-ivore, circlebacker 11), ghost/absen (ghost 9, ghoster 3,
   ghostboss 3, disappearer, vanisher, houdini, unreachable 7), delegasi
-  (delegator 10, overdelegator), micromanage (micromanager 5, micromancer 4,
+  (delegator 12, overdelegator), micromanage (micromanager 5, micromancer 4,
   micromanagasaurus, micromandator), credit (creditthief, credittaker,
   gloryhog, gloryhound, praisethief), urgency (asap 4, quickquestion 5,
-  yesterday 3, lastminuter, urgencydealer), hewan-joke (seagull 19, goldfish,
-  cuckoo, parrot, chameleon, dementor 2, vampire 2), arsonist 6, teflon 5,
-  bottleneck 7, escalator 6, overlord 5, puppetmaster 4, unfireable 4.
-- v1 "Seagull" TERNYATA 19-hit -- kata favorit kerumunan; salinan byte-identik
+  yesterday 3, lastminuter, urgencydealer), hewan-joke (seagull 22, goldfish,
+  cuckoo, parrot, chameleon, dementor 2, vampire 2), arsonist 6, teflon 7,
+  bottleneck 8, escalator 6, overlord 5, puppetmaster 4, unfireable 4,
+  blackhole 2.
+- v1 "Seagull" TERNYATA 22-hit -- kata favorit kerumunan; salinan byte-identik
   berbagi satu rate dan salinan yang lebih belakangan menempati peringkat di
   bawah salinan yang lebih dulu, jadi v1 hampir mustahil menang.
-- WHITE SPACE 0-hit terverifikasi (judul terlihat): toddler, paperweight,
-  magpie, goalpost, mirage, volcano, sloth, blackhole, veto, mushroom,
+- WHITE SPACE 0-hit terverifikasi (semua judul): toddler, paperweight,
+  magpie, goalpost, mirage, volcano, sloth, veto, mushroom,
   manbaby, mosquito, barnacle, seesaw, roulette, pendulum, sponge, vacuum,
   spectator, mascot, autopilot, zombie, cardboard, gargoyle, ostrich,
-  peacock, groundhog, never/maybe/later/tomorrow (kata keterangan -- RISIKO:
-  bukan kata yang menggambarkan bos, kalah kriteria 1).
+  peacock, groundhog, maybe/later/tomorrow (kata keterangan -- RISIKO:
+  bukan kata yang menggambarkan bos, kalah kriteria 1). "Blackhole" BUKAN
+  0-hit (2 sebutan) dan "never" BUKAN 0-hit (3 sebutan) -- keduanya
+  dicoret dari daftar putih.
 
 Pilihan v2: "Toddler". Head-to-head vs v1 (Seagull) menurut brief juri,
 kriteria berurutan, yang pertama berbeda yang menentukan:
@@ -37,7 +42,7 @@ kriteria berurutan, yang pertama berbeda yang menentukan:
    sama-sama benar.
 4. Segar: Seagull sedikit lebih segar secara abstrak, tapi selisihnya tidak
    "jauh lebih besar" dari keunggulan Toddler di kriteria 2, jadi kriteria 2
-   yang menentukan -- dan di lapangan nyata Toddler 0-hit vs Seagull 19-hit.
+   yang menentukan -- dan di lapangan nyata Toddler 0-hit vs Seagull 22-hit.
 5. Menular ke semua industri: toddler-boss ada di dapur, gudang, kantor.
 Vs kata kerumunan terkuat lain (Hovercraft 21): Toddler menang kriteria 2
 juga -- kiasan kendaraan satu-lapis vs potret perilaku yang kaya dan
