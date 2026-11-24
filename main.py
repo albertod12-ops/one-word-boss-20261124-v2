@@ -47,6 +47,7 @@ langsung dimengerti. 7 byte, sama dengan Seagull (seri tie-break byte).
 import os
 
 TEXT = "Toddler"
+assert 1 <= len(TEXT) <= 30 and " " not in TEXT and TEXT.strip() == TEXT
 OUT_DIR = "/output"
 OUT_PATH = os.path.join(OUT_DIR, "entry.txt")
 
